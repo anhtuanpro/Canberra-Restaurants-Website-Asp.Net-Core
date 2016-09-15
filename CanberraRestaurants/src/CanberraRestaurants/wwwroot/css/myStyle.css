@@ -1,0 +1,344 @@
+﻿
+
+.review {
+    color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 2px;
+}
+
+.review-header {
+    font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding-bottom: 5px;
+	display: block;
+    
+}
+
+.review hr {
+    border: none;
+    height: 2px;
+    background-color: #f8bd08;
+}
+
+.review h4 {
+    font-weight: bold;
+}
+
+.row { margin: 0px; }
+
+.buffer {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.row.restaurant {
+    margin-top:20px;
+    margin-bottom:20px;
+    height: 200px;
+    border: solid black;
+    padding: 20px;
+}
+
+.row.restaurant:hover {
+    border: solid #f8bd08;
+    color: #f8bd08;
+}
+.restaurant-link {
+    color: black;
+}
+
+.restaurant-text hr {
+    display: none;
+}
+
+body {
+    padding-top: 30px;
+}
+
+.text-banner {
+    padding: 120px 0px 200px;
+}
+
+.text-banner-altpage {
+    padding: 50px 0px 50px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.quote {
+    line-height: 0;
+}
+
+.restaurant-box {
+    padding: 20px 0 50px 0;
+}
+
+.text-banner h2 {
+    color: #f8bd08;
+    font-family: 'Niconne', cursive;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.text-banner-altpage h2 {
+    color: #f8bd08;
+    font-family: 'Niconne', cursive;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.text-banner p {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text-banner-altpage p {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.welcome {
+    padding: 50px 0px;
+}
+
+.rest-header {
+    padding: 20px 0px 10px 0px;
+}
+
+.rest-header hr {
+    border: none;
+    height: 2px;
+    background-color: #f8bd08;
+}
+
+
+/*this is used for header section*/
+header {
+    background-attachment: fixed;
+	background-color: #645862;
+	background-image: url("../images/restaurant_2.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF;
+	cursor: default;
+	padding: 0px;
+}
+
+.fullbg {
+    background-color:rgba(31, 20, 20, 0.8);
+}
+
+.logo {
+	text-align: center;
+    color: #FFF;
+    padding: 10px;
+    border: 2px solid #FFF;
+    display: block;
+    margin: 60px 0px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.logo-altpage {
+	text-align: center;
+    color: #FFF;
+    padding: 10px;
+    border: 2px solid #FFF;
+    display: block;
+    margin: 60px 0px 0px 0px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.section-container h3 {
+	font-family: 'Niconne', cursive;
+	color: #f8bd08;
+	font-size: 55px;
+	margin: 0px 0px -10px;
+    line-height: 1.5;
+}
+
+.header-text {
+	font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 26px;
+	padding-top: 5px;
+	display: block;
+}
+
+.restaurant-header-text {
+    font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 26px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.restaurant-text {
+	color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 28px;
+}
+
+.restaurant-text a {
+    color: #f8bd08;
+}
+
+.welcome-text p {
+	color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 28px;
+}
+.text {
+    color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+
+.categories {
+    color: white;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 28px;
+}
+
+.categories a { 
+    color: #f8bd08;
+}
+
+.welcome-image img {
+	width: 100%;
+    padding-top: 70px;
+}
+
+.welcome-image-alt img {
+	width: 100%;
+    padding-top: 10px;
+}
+
+.highlight-event {
+	background-attachment: fixed;
+	background-color: #645862;
+	background-image: url("../images/restaurant_3.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF;
+	cursor: default;
+	text-align: center;
+	padding: 0px;
+}
+
+.highlight-event-effect {
+	background-color:rgba(31, 20, 20, 0.9);
+	padding: 40px 0px;
+}
+
+
+/* CSS for screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .row.restaurant {
+        border: none;
+    }
+
+    .row.restaurant:hover {
+        border: none;
+    }
+
+    .restaurant-text hr {
+        display: block;
+        border: none;
+        height: 2px;
+        background-color: black;
+    }
+
+}
+
+/* CSS for screens smaller than 768px */
+@media (max-width: 768px) {
+
+    .logo {
+        margin: 15px 0px;
+        position: absolute;
+        font-size: 15px;
+    }
+
+    .logo-altpage {
+        margin: 15px 0px;
+        position: absolute;
+        font-size: 15px;
+    }
+
+    .text-banner {
+	    padding: 20px 20px 25px 20px;
+        margin-top: 60px;
+    }
+
+
+    .text-banner h2 {
+        font-size: 31px;
+        z-index: 1;
+    }
+
+    .text-banner p {
+        font-size: 14px;
+    }
+
+    .text-banner-altpage {
+	    padding: 20px 20px 25px 20px;
+        margin-top: 60px;
+    }
+
+
+    .text-banner-altpage h2 {
+        font-size: 31px;
+        z-index: 1;
+    }
+
+    .text-banner-altpage p {
+        font-size: 14px;
+    }
+
+    .fullbg {
+    	height: 210px;
+    }
+
+    header {
+        height: 210px;
+    }
+    
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}

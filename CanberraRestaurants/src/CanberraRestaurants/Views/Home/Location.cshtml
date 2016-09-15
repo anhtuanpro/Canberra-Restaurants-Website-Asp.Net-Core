@@ -1,0 +1,233 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXH3B1hH_44BUuktxEzqXa2qtQJtSAIEM"></script>
+
+<!--This is the header of the page-->
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Caneberra <br /> Restaurants
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Location</p>
+        </div>
+    </div>
+</div>
+<!-- This is the div that will contain the Google Map -->
+<div id="map">
+    <!--Map is showed here-->
+</div>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+<!-- Enclose the Javascript in a "section" so that it is rendered in the correct order after scripts have been loaded etc -->
+@section scripts {
+    <section class="scripts">
+        <script id="Jamie-Italian" type="text/html">
+            <h3>Jamie's Italian</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/jamie_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            With prime position in Canberra Centre on Bunda Street, Jamie's Italian is the perfect place for a mid-shopping pit stop, or a buzzing
+                            evening out with beautiful room height windows and impressive lofty ceilings, the restaurant is full atmosphere.
+                            <br />Click here for the Jamie's Italian Canberra website
+                        </p>
+                        <a class="infowindow-link" href="https://www.jamieoliver.com/italian/australia/" target="_blank">Jamie's Italian </a>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Italian-and-Sons" type="text/html">
+            <h3>Italian and Sons</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/is_logo.gif" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            A casual Italian trattoria that specialises in wood fired pizzas such as Rucoia with Proscuitto di Parma, rucola & reggiano.
+                            Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel
+                            & mustard fruids.<br />Click here for the Italian and Sons website.
+                        </p>
+                        <a class="infowindow-link" href="http://italianandsons.com.au/" target="_blank">Italian and Sons </a>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Blu-Ginger" type="text/html">
+            <h3>Blu Ginger</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/bluginger_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            In Blu Ginger we only use freshest locally sourced produce, compined with authentic
+                            spices imported directly from the sub-continent, to offer classic, traditional recipes
+                            with a modern twist, creating a unique and memorable dining for you.
+                            <br /> Click here for the Blu Ginger website.
+                        </p>
+                        <a class="infowindow-link" href="http://www.bluginger.com.au/" target="_blank">Blu Ginger </a>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Jewel-of-India" type="text/html">
+            <h3>Jewel of India</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/jewel_logo.jpg" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            Finding a balance between dishes inspired by authentic recipes and creating a modern
+                            take on classic cuisine sees a loyal following of Canberra locals returning for a
+                            mouth-watering feast.
+                            <br />Click here for the Jewel of Indian website.
+                        </p>
+                        <a class="infowindow-link" href="http://www.jewelofindia.com.au/" target="_blank">Jewel of India </a>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Chairman-Yip" type="text/html">
+            <h3>Chairman & Yip</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/chairman_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            The Chariman & Yip has become one of Canberra's longest standing and most highly regarded institution,
+                            having received nummerous awards over the years, offering an over consistent and professional quality of
+                            service for corporate dining, conferences and presentations.
+                            <br /> Click here for the Chairman & Yip website.
+                        </p>
+                        <a class="infowindow-link" href="http://chairmangroup.com.au/chairmanyip/" target="_blank">Chairman & Yip </a>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Dickson-Asian-Noodle-House" type="text/html">
+            <h3>Dickson Asian Noodle House</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/noodle_logo.jpg" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            The Dickson Asian Noodle House specialises in traditional Malaysian, Thai and Lao cuisine
+                            . The dining atmosphere is casual and cosy providing for a la carte dining, banquets and take away.
+                            <br />Click here for the Dickson Asian Noodle House Facebook page.<br />
+                        </p>
+                        <a class="infowindow-link"  href="http://www.noodlehouse.net.au/Noodle_house/Welcome.html" target="_blank">Dickson Asian Noodle House </a>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script type="text/javascript">
+
+
+            $(document).ready(function () {
+                Initialize();
+            });
+
+            // Where all the fun happens
+            function Initialize() {
+
+                // Google has tweaked their interface somewhat - this tells the api to use that new UI
+                google.maps.visualRefresh = true;
+                var Canberra = new google.maps.LatLng(-35.307500, 149.124417);
+
+                // These are options that set initial zoom level, where the map is centered globally to start, and the type of map to show
+                var mapOptions = {
+                    zoom: 12,
+                    center: Canberra,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                // This makes the div with id "map" a google map
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+                // a sample list of JSON encoded data of places to visit in Tunisia
+                // you can either make up a JSON list server side, or call it from a controller using JSONResult
+                var data = [
+                          { "Id": 1, "PlaceName": "Dickson-Asian-Noodle-House", "GeoLong": "149.136944", "GeoLat": "-35.249725" },
+                          { "Id": 2, "PlaceName": "Italian-and-Sons", "GeoLong": "149.132142", "GeoLat": "-35.274923" },
+                          { "Id": 3, "PlaceName": "Blu-Ginger", "GeoLong": "149.131889", "GeoLat": "-35.276853" },
+                          { "Id": 4, "PlaceName": "Jewel-of-India", "GeoLong": "149.132746", "GeoLat": "-35.320737" },
+                          { "Id": 5, "PlaceName": "Jamie-Italian", "GeoLong": "149.133558", "GeoLat": "-35.279527" },
+                          { "Id": 6, "PlaceName": "Chairman-Yip", "GeoLong": "149.134050", "GeoLat": "-35.311811" }
+                       ];
+
+                // Using the JQuery "each" selector to iterate through the JSON list and drop marker pins
+                $.each(data, function (i, item) {
+                    var marker = new google.maps.Marker({
+                        'position': new google.maps.LatLng(item.GeoLat, item.GeoLong),
+                        'map': map,
+                        'title': item.PlaceName
+                    });
+
+                    var div = document.createElement('div');
+                    div.setAttribute('class', 'someClass');
+                    div.innerHTML = document.getElementById(item.PlaceName).innerHTML;
+
+                    // put in some information about each json object
+                    var infowindow = new google.maps.InfoWindow({
+                        
+                    });
+                    infowindow.setContent(div);
+                    // finally hook up an "OnClick" listener to the map so it pops up out info-window when the marker-pin is clicked!
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infowindow.open(map, marker);
+                    });
+
+                })
+            }
+
+
+        </script>
+    </section>
+}

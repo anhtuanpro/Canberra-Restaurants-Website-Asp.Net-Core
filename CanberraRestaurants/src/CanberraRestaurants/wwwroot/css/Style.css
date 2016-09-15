@@ -1,0 +1,456 @@
+﻿
+.fullbg {
+    background-color: rgba(31, 20, 20, 0.8);
+    margin-top: 0px;
+    height: inherit;
+    width:100%;
+}
+div *{
+    box-sizing:border-box;
+}
+header {
+    background-image:url("../images/restaurant_2.jpg");
+    background-color: #645862;
+    background-attachment:fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF;
+	cursor: default;
+	padding: 0px;
+    display:block;
+    height: 600px;
+}
+.logo {
+	text-align: center;
+    color: #FFF;
+    padding: 10px;
+    border: 2px solid #FFF;
+    display: block;
+    margin: 60px 0px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.quote {
+    text-align: center;
+    margin-top: 60px;
+}
+.text-banner {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.author {
+    color: #f8bd08;
+    font-family: 'Niconne', cursive;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.buffer {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.side-img-left {
+    background-image: url("../images/burger.jpeg");
+    margin-top: 0px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.side-img-right {
+    background-image: url("../images/pasta.jpeg");
+    margin-top: 0px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.welcome {
+    margin-right:15px;
+    clear: both;
+}
+p {
+    line-height: 1.5;
+}
+
+.welcome-text {
+	color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 28px;
+}
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.section-container {
+	font-family: 'Niconne', cursive;
+	color: #f8bd08;
+	font-size: 55px;
+	margin: 0px 0px -10px;
+    line-height: 1.5;
+}
+
+.header-text {
+	font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 26px;
+	padding-top: 5px;
+	display: block;
+}
+
+.restaurant-header-text {
+    font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 26px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.welcome-text{
+	color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 28px;
+}
+.text {
+    color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+
+.highlight-event {
+	background-attachment: fixed;
+	background-color: #645862;
+	background-image: url("../images/restaurant_3.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF;
+	cursor: default;
+	text-align: center;
+	padding: 0px;
+    margin-top: 20px;
+    height: 300px;
+    position: relative;
+    display:block;
+}
+
+.highlight-event > p {
+    color: white;
+    font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+
+.vertical-center {
+    position: absolute;
+    margin-top: 50px;
+}
+
+.click-here {
+    color: #f8bd08; 
+}
+
+.review-to {
+    margin-top: 20px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature > hr {
+    border: none;
+    height: 2px;
+    background-color: #f8bd08;
+}
+
+/*Cuisine page*/
+
+.header-otherpage {
+    background-image:url("../images/restaurant_2.jpg");
+    background-color: #645862;
+    background-attachment:fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF;
+	cursor: default;
+	padding: 0px;
+    display:block;
+    height: 300px;
+}
+
+.logo-otherpages {
+	text-align: center;
+    color: #FFF;
+    padding: 10px;
+    border: 2px solid #FFF;
+    display: block;
+    margin: 60px 0px 20px 0px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.page-name {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.below-header {
+    margin-top: 30px;
+}
+.side-img-left-altpage {
+    background-image: url("../images/burger.jpeg");
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.side-img-right-altpage {
+    background-image: url("../images/pasta.jpeg");
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.restaurant-panel-body {
+   margin-top: 20px;
+
+}
+
+/*review section*/
+
+.review {
+    color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 20px;
+}
+
+.review-header {
+    font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding-bottom: 5px;
+	display: block;
+    
+}
+
+.rating > span::before {
+    color: #f8bd08;
+    content: "\2605";
+}
+
+.review-hr {
+    border: none;
+    height: 2px;
+    background-color: #f8bd08;
+}
+
+.review-title {
+    font-weight: bold;
+}
+
+/* restaurant list and reviews*/
+
+.restaurant-review {
+    width: 94%;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+/*Restaurants page*/
+.restaurant-header-text {
+    font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 26px;
+	padding-bottom: 0px;
+	display: block;
+}
+
+.restaurant-text {
+	color: rgb(31, 20, 20);
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 28px;
+}
+
+.restaurant {
+    width: 98%;
+    margin-left: 1%;
+    margin-top:20px;
+    margin-bottom:20px;
+    height: 200px;
+    border: solid black;
+    padding: 20px;
+}
+
+.restaurant:hover {
+    border: solid #f8bd08;
+    color: #f8bd08;
+}
+
+/*location page*/
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+.marker-info {
+    width: 700px;
+    height: 200px;
+    background-color: white;
+}
+
+
+.restaurant-text-map {
+    margin-left: 20px;
+}
+
+.infowindow-link {
+    margin-left: 40px;
+    border: 1px solid white;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    padding: 2px;
+    box-shadow: 2px 2px grey;
+}
+/* CSS for screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .restaurant {
+        border: none;
+        height:auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .restaurant:hover {
+        border: none;
+    }
+
+    .restaurant-text hr {
+        display: block;
+        border: none;
+        height: 2px;
+        background-color: black;
+    }
+    .vertical-center {
+        position: relative;
+    }
+    .restaurant-text-map {
+        margin: 10px 0px;
+    }
+}
+/* CSS for screens smaller than 768px */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+    .highlight-event {
+        height: auto;
+    }
+    .logo {
+        margin: 15px 0px;
+        position: relative;
+        font-size: 15px;
+    }
+
+    .logo-otherpages {
+        margin: 15px 0px;
+        position: relative;
+        font-size: 15px;
+    }
+    .logo-altpage {
+        margin: 15px 0px;
+        position: absolute;
+        font-size: 15px;
+    }
+
+    .text-banner {
+	    padding: 20px 20px 25px 20px;
+        margin-top: 60px;
+        font-size: 14px;
+    }
+
+
+    .author {
+        font-size: 31px;
+        z-index: 1;
+    }
+
+    .text-banner p {
+        font-size: 14px;
+    }
+
+    .text-banner-altpage {
+	    padding: 20px 20px 25px 20px;
+        margin-top: 60px;
+    }
+
+
+    .text-banner-altpage h2 {
+        font-size: 31px;
+        z-index: 1;
+    }
+
+    .text-banner-altpage p {
+        font-size: 14px;
+    }
+
+    
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .vertical-center {
+        position: relative;
+    }
+    .restaurant {
+        border: none;
+        height:auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .restaurant:hover {
+        border: none;
+    }
+
+    .restaurant-text hr {
+        display: block;
+        border: none;
+        height: 2px;
+        background-color: black;
+    }
+}
