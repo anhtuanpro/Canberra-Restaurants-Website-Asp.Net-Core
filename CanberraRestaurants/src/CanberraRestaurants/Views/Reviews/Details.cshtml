@@ -1,0 +1,90 @@
+@model CanberraRestaurants.Models.Review
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Caneberra <br /> Restaurants
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Review Details</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-9 col-md-offset-1">
+        <div class="edit-header">
+            <hr class="review-hr" />
+            <h3 style="margin-top:10px; margin-bottom: 10px; letter-spacing:3px" class="edit-review-text">review</h3>
+            <hr class="review-hr" />
+        </div>
+
+        <div>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Heading)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Heading)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Restaurant)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Restaurant)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Rating)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Rating)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Date)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Date)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.UserName)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Comment)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Comment)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DisagreeNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DisagreeNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AgreeNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.AgreeNumber)
+                </dd>
+            </dl>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</div>
+

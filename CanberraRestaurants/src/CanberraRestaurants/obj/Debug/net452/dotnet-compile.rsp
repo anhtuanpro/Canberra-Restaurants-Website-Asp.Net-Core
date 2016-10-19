@@ -1,5 +1,5 @@
---temp-output:C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\obj\Debug\net452\
---out:C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\bin\Debug\net452\CanberraRestaurants.exe
+--temp-output:C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\obj\Debug\net452\
+--out:C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\bin\Debug\net452\CanberraRestaurants.exe
 --define:DEBUG
 --define:TRACE
 --define:NET452
@@ -196,33 +196,41 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ServiceModel.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tracing.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Primitives.dll
---resource:"C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\obj\Debug\net452\CanberraRestaurantsdotnet-compile.deps.json",CanberraRestaurants.deps.json
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Program.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Startup.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Controllers\AccountController.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Controllers\HomeController.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Controllers\ManageController.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Data\ApplicationDbContext.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Data\Migrations\00000000000000_CreateIdentitySchema.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Data\Migrations\ApplicationDbContextModelSnapshot.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ApplicationUser.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\AccountViewModels\ForgotPasswordViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\AccountViewModels\LoginViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\AccountViewModels\RegisterViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\AccountViewModels\ResetPasswordViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\AccountViewModels\SendCodeViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\AccountViewModels\VerifyCodeViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\AddPhoneNumberViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\ChangePasswordViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\ConfigureTwoFactorViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\FactorViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\IndexViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\ManageLoginsViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\RemoveLoginViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\SetPasswordViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Services\IEmailSender.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Services\ISmsSender.cs
-C:\Users\olive\documents\visual studio 2015\Projects\CanberraRestaurants\src\CanberraRestaurants\Services\MessageServices.cs
+--resource:"C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\obj\Debug\net452\CanberraRestaurantsdotnet-compile.deps.json",CanberraRestaurants.deps.json
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Program.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Startup.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Controllers\AccountController.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Controllers\HomeController.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Controllers\ManageController.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Controllers\ReviewsController.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Controllers\UnitResultsController.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\ApplicationDbContext.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\Migrations\00000000000000_CreateIdentitySchema.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\Migrations\20161012131017_Initial.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\Migrations\20161012131017_Initial.Designer.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\Migrations\20161014131444_Review.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\Migrations\20161014131444_Review.Designer.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Data\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ApplicationUser.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\Review.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\UnitResult.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\AccountViewModels\ForgotPasswordViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\AccountViewModels\LoginViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\AccountViewModels\RegisterViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\AccountViewModels\ResetPasswordViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\AccountViewModels\SendCodeViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\AccountViewModels\VerifyCodeViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\AddPhoneNumberViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\ChangePasswordViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\ConfigureTwoFactorViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\FactorViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\IndexViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\ManageLoginsViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\RemoveLoginViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\SetPasswordViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Services\IEmailSender.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Services\ISmsSender.cs
+C:\Users\olive\Documents\Visual Studio 2015\Projects\CanberraRestaurants_version1.0\src\CanberraRestaurants\Services\MessageServices.cs

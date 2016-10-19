@@ -29,28 +29,6 @@
     <!--Map is showed here-->
 </div>
 
-<p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
-
-<script>
-var x = document.getElementById("demo");
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
-}
-</script>
 
 <!-- Enclose the Javascript in a "section" so that it is rendered in the correct order after scripts have been loaded etc -->
 @section scripts {
@@ -66,7 +44,7 @@ function showPosition(position) {
                         <p class="restaurant-text-map">
                             With prime position in Canberra Centre on Bunda Street, Jamie's Italian is the perfect place for a mid-shopping pit stop, or a buzzing
                             evening out with beautiful room height windows and impressive lofty ceilings, the restaurant is full atmosphere.
-                            <br />Click here for the Jamie's Italian Canberra website
+                            <br /><a href="https://www.jamieoliver.com/italian/australia/" target="_blank">Click here</a> for the Jamie's Italian Canberra website
                         </p>
                         <a class="infowindow-link" href="https://www.jamieoliver.com/italian/australia/" target="_blank">Jamie's Italian </a>
                     </div>
@@ -84,7 +62,7 @@ function showPosition(position) {
                         <p class="restaurant-text-map">
                             A casual Italian trattoria that specialises in wood fired pizzas such as Rucoia with Proscuitto di Parma, rucola & reggiano.
                             Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel
-                            & mustard fruids.<br />Click here for the Italian and Sons website.
+                            & mustard fruids.<br /><a href="http://italianandsons.com.au/" target="_blank">Click here</a> for the Italian and Sons website.
                         </p>
                         <a class="infowindow-link" href="http://italianandsons.com.au/" target="_blank">Italian and Sons </a>
                     </div>
@@ -103,7 +81,7 @@ function showPosition(position) {
                             In Blu Ginger we only use freshest locally sourced produce, compined with authentic
                             spices imported directly from the sub-continent, to offer classic, traditional recipes
                             with a modern twist, creating a unique and memorable dining for you.
-                            <br /> Click here for the Blu Ginger website.
+                            <br /><a href="http://www.bluginger.com.au/" target="_blank">Click here</a> for the Blu Ginger website.
                         </p>
                         <a class="infowindow-link" href="http://www.bluginger.com.au/" target="_blank">Blu Ginger </a>
                     </div>
@@ -122,7 +100,7 @@ function showPosition(position) {
                             Finding a balance between dishes inspired by authentic recipes and creating a modern
                             take on classic cuisine sees a loyal following of Canberra locals returning for a
                             mouth-watering feast.
-                            <br />Click here for the Jewel of Indian website.
+                            <br /><a href="http://www.jewelofindia.com.au/" target="_blank">Click here</a> for the Jewel of Indian website.
                         </p>
                         <a class="infowindow-link" href="http://www.jewelofindia.com.au/" target="_blank">Jewel of India </a>
                     </div>
@@ -141,7 +119,7 @@ function showPosition(position) {
                             The Chariman & Yip has become one of Canberra's longest standing and most highly regarded institution,
                             having received nummerous awards over the years, offering an over consistent and professional quality of
                             service for corporate dining, conferences and presentations.
-                            <br /> Click here for the Chairman & Yip website.
+                            <br /> <a href="http://chairmangroup.com.au/chairmanyip/" target="_blank">Click here</a> for the Chairman & Yip website.
                         </p>
                         <a class="infowindow-link" href="http://chairmangroup.com.au/chairmanyip/" target="_blank">Chairman & Yip </a>
                     </div>
@@ -159,7 +137,7 @@ function showPosition(position) {
                         <p class="restaurant-text-map">
                             The Dickson Asian Noodle House specialises in traditional Malaysian, Thai and Lao cuisine
                             . The dining atmosphere is casual and cosy providing for a la carte dining, banquets and take away.
-                            <br />Click here for the Dickson Asian Noodle House Facebook page.<br />
+                            <br /><a href="http://www.noodlehouse.net.au/Noodle_house/Welcome.html" target="_blank">Click here</a> for the Dickson Asian Noodle House Facebook page.<br />
                         </p>
                         <a class="infowindow-link"  href="http://www.noodlehouse.net.au/Noodle_house/Welcome.html" target="_blank">Dickson Asian Noodle House </a>
                     </div>

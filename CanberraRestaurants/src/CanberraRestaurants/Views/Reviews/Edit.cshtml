@@ -1,0 +1,112 @@
+@model CanberraRestaurants.Models.Review
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Caneberra <br /> Restaurants
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Edit</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-9 col-md-offset-1">
+        <div class="edit-header">
+            <hr class="review-hr" />
+            <h3 style="margin-top:10px; margin-bottom: 10px; letter-spacing:3px" class="edit-review-text">Edit review</h3>
+            <hr class="review-hr" />
+        </div>
+
+        <form asp-action="Edit">
+            <div class="form-horizontal">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="Heading" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Heading" class="form-control" />
+                        <span asp-validation-for="Heading" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Rating" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Rating" class="form-control" />
+                        <span asp-validation-for="Rating" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Restaurant" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Restaurant" class="form-control" />
+                        <span asp-validation-for="Restaurant" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserName" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="UserName" class="form-control" />
+                        <span asp-validation-for="UserName" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Date" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Comment" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <textarea rows="5" asp-for="Comment" class="form-control" placeholder="Enter a Comment"></textarea>
+                        <span asp-validation-for="Comment" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AgreeNumber" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="AgreeNumber" class="form-control" />
+                        <span asp-validation-for="AgreeNumber" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DisagreeNumber" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="DisagreeNumber" class="form-control" />
+                        <span asp-validation-for="DisagreeNumber" class="text-danger" />
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
