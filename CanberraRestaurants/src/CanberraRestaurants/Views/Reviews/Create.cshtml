@@ -1,0 +1,93 @@
+@model CanberraRestaurants.Models.Review
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Caneberra <br /> Restaurants
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Create a Review</p>
+        </div>
+    </div>
+</div>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Date" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Date" class="form-control" value="@DateTime.Now.ToString()" readonly/>
+                <span asp-validation-for="Date" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="UserName" class="form-control" value="@User.Identity.Name" readonly/>
+                <span asp-validation-for="UserName" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Heading" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Heading" class="form-control" placeholder="Enter a Heading"/>
+                <span asp-validation-for="Heading" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Restaurant" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="Restaurant" class="form-control">
+                    <option>Select a Restaurant</option>
+                    <option value="Italian and Sons">Italia and Sons</option>
+                    <option value="Jamie's Italian">Jamie's Italian</option>
+                    <option value="Chairman & Yip">Chairman & Yip</option>
+                    <option value="Dickson Asian Noodle House">Dickson Asian Noodle House</option>
+                    <option value="Blu Ginger">Blu Ginger</option>
+                    <option value="Jewel of Indian">Jewel of Indian</option>
+                </select>
+                <span asp-validation-for="Restaurant" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Comment" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <textarea rows="5" asp-for="Comment" class="form-control" placeholder="Enter a Comment"></textarea>
+                <span asp-validation-for="Comment" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Rating" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input max="5" min="0" asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger" />
+            </div>
+        </div>
+        
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

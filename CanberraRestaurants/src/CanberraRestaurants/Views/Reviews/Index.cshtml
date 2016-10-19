@@ -1,0 +1,171 @@
+@model IEnumerable<CanberraRestaurants.Models.Review>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Caneberra <br /> Restaurants
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Reviews</p>
+        </div>
+    </div>
+</div>
+
+<div class="below-header">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="welcome">
+                <p class="header-text">Be the critic</p>
+                <p class="text">
+                    Have you been to a restaurant recently and love it or loathed it? and tell us all about it.
+                </p>
+                <p class="text">
+                    Find your inner restaurant critic and create an account to review your recent dining experience.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="side-img-left-altpage">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="side-img-right-altpage">
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+<div class="button">
+    <div class="row">
+        <div class="col-md-9 col-md-offset-1">
+            @{
+                if(User.IsInRole("User") || User.IsInRole("Manager"))
+                {
+                    <a asp-action="Create" id="SendReview">Submit a Review</a>
+                }
+                else
+                {
+                    <p class="text">Please <a asp-controller="Account" asp-action="login">login</a> or <a asp-controller="Account" asp-action="register">register an account</a> to review a restaurant</p>
+
+                }
+            }
+        </div>
+    </div>
+</div>
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Heading)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Heading)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Restaurant)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@
+
+<div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+            @foreach (var item in Model)
+            {
+                <h3>@Html.DisplayFor(modelItem => item.Heading)</h3>
+                <p class="text"><b>@@ @Html.DisplayFor(modelItem => item.Restaurant)</b></p>
+                <div class="rating-bar">
+                    @{
+                        var YellowStar = item.Rating;
+                        var BlackStar = 5 - YellowStar;
+                        while (YellowStar > 0)
+                        {
+                            <span class="yellow-star">&#x2605</span>
+                            YellowStar--;
+                        }
+                        while (BlackStar > 0)
+                        {
+                            <span class="black-star">&#x2606</span>
+                            BlackStar--;
+                        }
+                    }
+                </div>
+                <div class="comment">
+                    <p class="text">@Html.DisplayFor(modelItem => item.Comment)</p>
+                </div>
+                <p class="text">Review by <b>@Html.DisplayFor(modelItem => item.UserName)</b> on <b>@Html.DisplayFor(modelItem => item.Date)</b></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a id="detail-button" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a id="agree-button" asp-action="IncreaseAgreeNumber" asp-route-id="@item.Id">Agree (@Html.DisplayFor(modelItem => item.AgreeNumber))</a>
+                        <a id="disagree-button" asp-action="IncreaseDisagreeNumber" asp-route-id="@item.Id">Disagree (@Html.DisplayFor(modelItem => item.DisagreeNumber))</a>
+                    </div>
+                    @if (User.IsInRole("Manager"))
+                    {
+                    <div class="col-md-6">
+                        <div id="delete-edit">
+                            <a id="edit-button" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            <a id="delete-button" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </div>
+                    </div>
+                    }
+                </div>
+                <hr class="review-hr" />
+            }
+        </div> 
+    </div>
+</div>

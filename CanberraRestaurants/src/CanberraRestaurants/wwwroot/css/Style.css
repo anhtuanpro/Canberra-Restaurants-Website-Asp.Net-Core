@@ -52,7 +52,7 @@ header {
     text-align: center;
     font-weight: 400;
     display: block;
-    margin-bottom: 0px;
+   
 }
 
 .buffer {
@@ -62,7 +62,7 @@ header {
 
 .side-img-left {
     background-image: url("../images/burger.jpeg");
-    margin-top: 0px;
+    margin-top: 10px;
     width: 150px;
     height: 150px;
     padding: 20px;
@@ -70,7 +70,7 @@ header {
 
 .side-img-right {
     background-image: url("../images/pasta.jpeg");
-    margin-top: 0px;
+    margin-top: 10px;
     width: 150px;
     height: 150px;
     padding: 20px;
@@ -174,6 +174,7 @@ p {
 
 .feature {
     text-align: center;
+    margin: 40px 0;
 }
 
 .feature > hr {
@@ -263,11 +264,19 @@ p {
     
 }
 
-.rating > span::before {
-    color: #f8bd08;
-    content: "\2605";
+.rating-bar{
+    line-height:1.5;
 }
 
+.yellow-star {
+    color: #f8bd08;
+    content: "\2605";
+    font-size: 20px;
+}
+.black-star{
+    color: black;
+    font-size: 20px;
+}
 .review-hr {
     border: none;
     height: 2px;
@@ -302,7 +311,7 @@ p {
 	font-family: "Lato", sans-serif;
 	font-size: 16px;
 	margin-top: 10px;
-	line-height: 28px;
+	line-height: 20px;
 }
 
 .restaurant {
@@ -311,12 +320,12 @@ p {
     margin-top:20px;
     margin-bottom:20px;
     height: 200px;
-    border: solid black;
+    border: solid black 4px;
     padding: 20px;
 }
 
 .restaurant:hover {
-    border: solid #f8bd08;
+    border: solid #f8bd08 4px;
     color: #f8bd08;
 }
 
@@ -346,111 +355,201 @@ p {
     padding: 2px;
     box-shadow: 2px 2px grey;
 }
+
+.button{
+    margin-top: 20px;
+}
+
+#SendReview{
+    margin-top:20px;
+    padding:5px 10px;
+    background-color:darkturquoise;
+    border: hidden;
+    border-radius: 3px 3px;
+    background-clip:border-box;
+    color:white;
+}
+#SendReview:hover{
+    text-decoration:none;
+    background-color: blue;
+}
+
+#detail-button{
+    border: solid #b3b3b3 1px;
+    color: black;
+    border-radius: 3px 3px;
+    padding: 5px 10px;
+}
+#agree-button{
+    background-color: #00b33c;
+    color: white;
+    border-radius: 3px 3px;
+    padding: 5px 10px;
+}
+#disagree-button{
+    background-color: #ff5050;
+    color: white;
+    border-radius: 3px 3px;
+    padding: 5px 10px;
+}
+#edit-button{
+    border: solid #b3b3b3 1px;
+    color: black;
+    border-radius: 3px 3px;
+    padding: 5px 10px;
+}
+#delete-button{
+    border: solid #b3b3b3 1px;
+    color: black;
+    border-radius: 3px 3px;
+    padding: 5px 10px;
+}
+#delete-edit{
+    float: right;
+}
+.comment{
+    margin-top: 10px;
+}
+
+.edit-review-text{
+    padding: 0px;
+    font-size: 30px;
+    text-transform:uppercase;
+}
+.edit-header > hr{
+    margin: 0px 0px;
+}
+.edit-header{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* CSS for screens smaller than 1300px */
+@media (max-width: 1200px) {
+    .restaurant {
+        border: solid black 4px;
+        height: 210px;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
 /* CSS for screens smaller than 1000px */
 @media (max-width: 1000px) {
-    .restaurant {
-        border: none;
-        height:auto;
-        width: 100%;
-        margin: 10px 0;
-    }
+        .restaurant {
+            border: none;
+            height: auto;
+            width: 100%;
+            margin: 10px 0;
+        }
 
-    .restaurant:hover {
-        border: none;
-    }
+        .restaurant:hover {
+                border: none;
+            }
 
-    .restaurant-text hr {
-        display: block;
-        border: none;
-        height: 2px;
-        background-color: black;
-    }
-    .vertical-center {
-        position: relative;
-    }
-    .restaurant-text-map {
-        margin: 10px 0px;
-    }
+        .restaurant-text hr {
+            display: block;
+            border: none;
+            height: 2px;
+            background-color: black;
+        }
+
+        .vertical-center {
+            position: relative;
+        }
+
+        .restaurant-text-map {
+            margin: 10px 0px;
+        }
 }
-/* CSS for screens smaller than 768px */
+    /* CSS for screens smaller than 768px */
 @media (max-width: 768px) {
-    header {
-        height: auto;
-    }
-    .highlight-event {
-        height: auto;
-    }
-    .logo {
-        margin: 15px 0px;
-        position: relative;
-        font-size: 15px;
-    }
+        header {
+            height: auto;
+        }
 
-    .logo-otherpages {
-        margin: 15px 0px;
-        position: relative;
-        font-size: 15px;
-    }
-    .logo-altpage {
-        margin: 15px 0px;
-        position: absolute;
-        font-size: 15px;
-    }
+        .highlight-event {
+            height: auto;
+        }
 
-    .text-banner {
-	    padding: 20px 20px 25px 20px;
-        margin-top: 60px;
-        font-size: 14px;
-    }
+        .logo {
+            margin: 15px 0px;
+            position: relative;
+            font-size: 15px;
+        }
 
+        .logo-otherpages {
+            margin: 15px 0px;
+            position: relative;
+            font-size: 15px;
+        }
 
-    .author {
-        font-size: 31px;
-        z-index: 1;
-    }
+        .logo-altpage {
+            margin: 15px 0px;
+            position: absolute;
+            font-size: 15px;
+        }
 
-    .text-banner p {
-        font-size: 14px;
-    }
-
-    .text-banner-altpage {
-	    padding: 20px 20px 25px 20px;
-        margin-top: 60px;
-    }
+        .text-banner {
+            padding: 20px 20px 0px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
 
 
-    .text-banner-altpage h2 {
-        font-size: 31px;
-        z-index: 1;
-    }
+        .author {
+            padding-bottom: 10px;
+            font-size: 31px;
+            z-index: 1;
+        }
 
-    .text-banner-altpage p {
-        font-size: 14px;
-    }
+        .text-banner p {
+            font-size: 14px;
+        }
 
-    
-    .navbar {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .vertical-center {
-        position: relative;
-    }
-    .restaurant {
-        border: none;
-        height:auto;
-        width: 100%;
-        margin: 10px 0;
-    }
+        .text-banner-altpage {
+            padding: 20px 20px 25px 20px;
+            margin-top: 60px;
+        }
 
-    .restaurant:hover {
-        border: none;
-    }
 
-    .restaurant-text hr {
-        display: block;
-        border: none;
-        height: 2px;
-        background-color: black;
-    }
+         .text-banner-altpage h2 {
+                font-size: 31px;
+                z-index: 1;
+            }
+
+        .text-banner-altpage p {
+                font-size: 14px;
+            }
+
+
+        .navbar {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .vertical-center {
+            position: relative;
+        }
+
+        .restaurant {
+            border: none;
+            height: auto;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .restaurant:hover {
+                border: none;
+         }
+
+        .restaurant-text hr {
+            display: block;
+            border: none;
+            height: 2px;
+            background-color: black;
+        }
+        .restaurant-review {
+            margin-left: 0%;
+        }
 }
+    

@@ -1,0 +1,75 @@
+@model CanberraRestaurants.Models.UnitResult
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>UnitResult</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Assignment1Mark" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Assignment1Mark" class="form-control" />
+                <span asp-validation-for="Assignment1Mark" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Assignment2Mark" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Assignment2Mark" class="form-control" />
+                <span asp-validation-for="Assignment2Mark" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ExamMark" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ExamMark" class="form-control" />
+                <span asp-validation-for="ExamMark" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Grade" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Grade" class="form-control" />
+                <span asp-validation-for="Grade" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="StudentId" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="StudentId" class="form-control" />
+                <span asp-validation-for="StudentId" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="StudentName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="StudentName" class="form-control" />
+                <span asp-validation-for="StudentName" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TotalMark" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TotalMark" class="form-control" />
+                <span asp-validation-for="TotalMark" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

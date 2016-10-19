@@ -1,0 +1,75 @@
+@model CanberraRestaurants.Models.UnitResult
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Caneberra <br /> Restaurants
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Reviews</p>
+        </div>
+    </div>
+</div>
+<h2>Details hgjhgkjhk</h2>
+
+<div>
+    <h4>UnitResult abbdnsadmnasd,sand</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Assignment1Mark)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Assignment1Mark)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Assignment2Mark)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Assignment2Mark)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamMark)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExamMark)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Grade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Grade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StudentId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalMark)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalMark)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
